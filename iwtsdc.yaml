@@ -1,0 +1,38 @@
+student:
+  name: "{{student_name}}"
+
+# Settings
+## Timings
+time:
+  # Class duration (mins)
+  class_duration: 40
+
+  # Time interval between classes (mins)
+  time_interval: 10
+
+  # School timings start/stop
+  ## First item is hour and second is mins (24-hour format)
+  start: [9, 30]
+  stop: [11, 50]
+
+## Recordings
+record:
+  start: simplescreenrecorder & disown
+  toggle: [ctrl, alt, r]
+
+# Define subjects
+subjects:
+  chemistry: "{{url_token}}"
+  math: "{{url_token}}"
+  biology: "{{url_token}}"
+  arabic: "{{url_token}}"
+  physics: "{{url_token}}"
+  english: "{{url_token}}"
+
+# Subjects for everyday
+schedule:
+  sun: [chemistry, math]
+  mon: [biology, arabic, physics]
+  tue: [english, chemistry, arabic]
+  wed: [biology, math]
+  thu: [null, physics, english]
